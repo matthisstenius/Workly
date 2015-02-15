@@ -1,0 +1,16 @@
+default:
+    autoload:
+        '': %paths.base%/tests/behat/features/bootstrap
+    suites:
+        domain:
+            paths: [ %paths.base%/tests/behat/features]
+            contexts:
+              - UserContext
+              - CompanyContext
+              - QualityContext
+              - RecommendContext
+        functional:
+              paths: [ %paths.base%/tests/behat/features]
+              contexts:
+                - LaravelFeatureContext
+                - APIUserContext

@@ -1,0 +1,6 @@
+suites:
+    workly_suite:
+        namespace: Workly
+        psr4_prefix: Workly
+        spec_path: tests
+        src_path: app
